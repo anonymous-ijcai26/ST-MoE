@@ -1,0 +1,11 @@
+name: mdd
+batch_size: 8
+test_batch_size: 8
+val_batch_size: 8
+train_set: 0.7
+val_set: 0.1
+# path: E:\Technolgy_learning\Learning_code\AD\BrainNetworkTransformer-main\BrainNetworkTransformer-main\source\abide.npy
+path: /root/autodl-tmp/wk/liu/BNT_Cluster/data/connectivity_data_mdd_cc200.npy
+# path: E:\Technolgy_learning\Learning_code\AD\BrainNetworkTransformer-View-Bert\source\dataset\871的那个样本\processed_data_偏相关.npy
+stratified: True
+drop_last: True

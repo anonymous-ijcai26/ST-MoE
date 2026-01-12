@@ -1,0 +1,27 @@
+# seq, gnn, fbnetgen 
+name: BrainNetworkTransformer
+sizes: [360, 100]  
+pooling: [false, true]
+pos_encoding: none  
+pos_embed_dim: 360
+
+
+gin_type: "moe_gin"  
+num_gin_layers: 1
+num_gin_experts: 8
+sparsity: 30
+gin_hidden: 128
+fc_hidden: 128
+gin_s_loss_coeff: 1.0
+gin_b_loss_coeff: 1.0
+graph_pooling: "mean" 
+dropout: 0.5
+num_features: 200
+
+
+# State experts
+num_states: 6
+state_ex_loss_coeff: 1.0
+orthogonal: false
+freeze_center: false
+project_assignment: false

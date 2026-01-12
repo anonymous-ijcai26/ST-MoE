@@ -1,0 +1,15 @@
+defaults: #这里来获得其他文件夹下的一些参数
+  - dataset: ADHD # ADNI MDD ABIDEII ABIDE ADHD
+  - model: ST-MoE # 
+  - optimizer: adam
+  - training: basic_training
+  - datasz: 100p
+  - preprocess: mixup
+
+repeat_time: 5
+log_path: log_path
+save_learnable_graph: False
+
+# wandb
+wandb_entity: wandb_entity_name
+project: 
